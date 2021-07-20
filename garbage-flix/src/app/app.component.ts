@@ -24,8 +24,7 @@ export class AppComponent implements OnInit {
     }, 1000);
   }
 
-  title = 'fuck you';
-  movies;
+  title = 'oops';
 
   multiplyNumber(n: number) {
     return n * 2;
