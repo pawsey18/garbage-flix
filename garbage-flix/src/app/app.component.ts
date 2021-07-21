@@ -6,25 +6,45 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  // trendingMovies:
+  //   | { title: string; releaseDate: Date; price: number }[]
+  //   | undefined;
+  // horrorMovies: { title: string; releaseDate: Date; price: number }[] = [];
+  trendingMovies:
+    | { title: string; releaseDate: Date; price: number }[]
+    | undefined;
+  horrorMovies:
+    | { title: string; releaseDate: Date; price: number }[]
+    | undefined;
+    
   ngOnInit(): void {
-    setTimeout(() => {
-      this.movies = [
-        {
-          title: 'Spider-Man',
-          releaseDate: new Date(),
-          price: 1400.0,
-        },
+    this.trendingMovies = [
+      {
+        title: 'Freddy Vs Jason',
+        releaseDate: new Date(),
+        price: 1400.0,
+      },
+      {
+        title: 'Spider-Man',
+        releaseDate: new Date(),
+        price: 1400.0,
+      },
+    ];
 
-        {
-          title: 'Spider-Man',
-          releaseDate: new Date(),
-          price: 1400.0,
-        },
-      ];
-    }, 1000);
+    this.horrorMovies = [
+      {
+        title: 'Killer Clown',
+        releaseDate: new Date(),
+        price: 5,
+      },
+      {
+        title: 'I Know What You Did Last Summer',
+        releaseDate: new Date(),
+        price: 59,
+      },
+    ];
   }
 
-  title = 'oops';
 
   multiplyNumber(n: number) {
     return n * 2;

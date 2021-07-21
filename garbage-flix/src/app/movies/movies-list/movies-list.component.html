@@ -1,0 +1,21 @@
+<img
+  *ngIf="!movies"
+  src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp"
+/>
+
+<img *ngIf="movies?.length === 0" There are currently no records. />
+
+<div *ngFor="let movie of movies; let index = index" class="movie-container">
+  <div>
+    {{ movie.title | titlecase }}
+  </div>
+
+  <div>
+    {{ index }}
+    {{ movie.releaseDate | date: "dd-MMMM" | uppercase }}
+  </div>
+
+  <div>
+    {{ movie.price | currency }}
+  </div>
+</div>
