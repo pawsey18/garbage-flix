@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   horrorMovies:
     | { title: string; releaseDate: Date; price: number }[]
     | undefined;
-    
+
   ngOnInit(): void {
     this.trendingMovies = [
       {
@@ -31,20 +31,8 @@ export class AppComponent implements OnInit {
       },
     ];
 
-    this.horrorMovies = [
-      {
-        title: 'Killer Clown',
-        releaseDate: new Date(),
-        price: 5,
-      },
-      {
-        title: 'I Know What You Did Last Summer',
-        releaseDate: new Date(),
-        price: 59,
-      },
-    ];
+    this.horrorMovies = [];
   }
-
 
   multiplyNumber(n: number) {
     return n * 2;
