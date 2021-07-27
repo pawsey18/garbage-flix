@@ -8,9 +8,11 @@ import { GenericListComponent } from './utilities/generic-list/generic-list.comp
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material/material.module';
+import { MenuComponent } from './menu/menu.component';
+import { RatingComponent } from './utilities/rating/rating.component';
 
 @NgModule({
-  declarations: [AppComponent, MoviesListComponent, GenericListComponent],
+  declarations: [AppComponent, MoviesListComponent, GenericListComponent, MenuComponent, RatingComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
   providers: [],
   bootstrap: [AppComponent],

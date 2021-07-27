@@ -6,10 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  // trendingMovies:
-  //   | { title: string; releaseDate: Date; price: number }[]
-  //   | undefined;
-  // horrorMovies: { title: string; releaseDate: Date; price: number }[] = [];
+  title: 'Garbge Flix' | undefined;
   trendingMovies:
     | { title: string; releaseDate: Date; price: number }[]
     | undefined;
@@ -19,6 +16,36 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.trendingMovies = [
+      {
+        title: 'Freddy Vs Jason',
+        releaseDate: new Date(),
+        price: 1400.0,
+      },
+      {
+        title: 'Spider-Man',
+        releaseDate: new Date(),
+        price: 1400.0,
+      },
+      {
+        title: 'Freddy Vs Jason',
+        releaseDate: new Date(),
+        price: 1400.0,
+      },
+      {
+        title: 'Spider-Man',
+        releaseDate: new Date(),
+        price: 1400.0,
+      },
+      {
+        title: 'Freddy Vs Jason',
+        releaseDate: new Date(),
+        price: 1400.0,
+      },
+      {
+        title: 'Spider-Man',
+        releaseDate: new Date(),
+        price: 1400.0,
+      },
       {
         title: 'Freddy Vs Jason',
         releaseDate: new Date(),
