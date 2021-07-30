@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title: 'Garbge Flix' | undefined;
   trendingMovies:
-    | { title: string; releaseDate: Date; price: number }[]
+    | { title: string; releaseDate: Date; price: number; poster: string }[]
     | undefined;
   horrorMovies:
     | { title: string; releaseDate: Date; price: number }[]
@@ -20,41 +20,15 @@ export class AppComponent implements OnInit {
         title: 'Freddy Vs Jason',
         releaseDate: new Date(),
         price: 1400.0,
+        poster:
+          'https://m.media-amazon.com/images/M/MV5BODNlNWVjOTMtZjVjYy00MzRjLTg2MmQtNTM3MWVmZjFjYzgwXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_FMjpg_UX1000_.jpg',
       },
       {
-        title: 'Spider-Man',
+        title: 'Wild Hogs',
         releaseDate: new Date(),
         price: 1400.0,
-      },
-      {
-        title: 'Freddy Vs Jason',
-        releaseDate: new Date(),
-        price: 1400.0,
-      },
-      {
-        title: 'Spider-Man',
-        releaseDate: new Date(),
-        price: 1400.0,
-      },
-      {
-        title: 'Freddy Vs Jason',
-        releaseDate: new Date(),
-        price: 1400.0,
-      },
-      {
-        title: 'Spider-Man',
-        releaseDate: new Date(),
-        price: 1400.0,
-      },
-      {
-        title: 'Freddy Vs Jason',
-        releaseDate: new Date(),
-        price: 1400.0,
-      },
-      {
-        title: 'Spider-Man',
-        releaseDate: new Date(),
-        price: 1400.0,
+        poster:
+          'https://m.media-amazon.com/images/M/MV5BZWZlMzQ5NmItNjBmMS00NDgyLThiNDYtZWU2MzA3YjZmOGU5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg',
       },
     ];
 
@@ -63,5 +37,9 @@ export class AppComponent implements OnInit {
 
   multiplyNumber(n: number) {
     return n * 2;
+  }
+
+  handleRating(rate: number) {
+    alert(`the user selected ${rate}`);
   }
 }

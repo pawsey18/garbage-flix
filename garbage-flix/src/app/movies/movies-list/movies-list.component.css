@@ -1,5 +1,28 @@
 .movie-container {
-  border: 1px black solid;
-  margin: 1rem;
-  padding: 1rem;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.movies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+p {
+  max-width: 225;
+  height: 44px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+img {
+  width: 230px;
+  height: 300px;
+}
+
+button {
+  margin-left: 1em;
 }
