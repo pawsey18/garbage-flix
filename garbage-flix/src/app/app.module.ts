@@ -11,9 +11,11 @@ import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { RatingComponent } from './utilities/rating/rating.component';
 import { HomeComponent } from './home/home.component';
+import { IndexGenresComponent } from './genres/index-genres/index-genres.component';
+import { CreateGenreComponent } from './genres/create-genre/create-genre.component';
 
 @NgModule({
-  declarations: [AppComponent, MoviesListComponent, GenericListComponent, MenuComponent, RatingComponent, HomeComponent],
+  declarations: [AppComponent, MoviesListComponent, GenericListComponent, MenuComponent, RatingComponent, HomeComponent, IndexGenresComponent, CreateGenreComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
   providers: [],
   bootstrap: [AppComponent],
