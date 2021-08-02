@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MoviesListComponent } from './movies/movies-list/movies-list.component';
 import { GenericListComponent } from './utilities/generic-list/generic-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
@@ -19,6 +20,10 @@ import { CreateMovieComponent } from './movies/create-movie/create-movie.compone
 
 import { IndexMovieTheatherComponent } from './movie-theaters/index-movie-theather/index-movie-theather.component';
 import { CreateMovieTheaterComponent } from './movie-theaters/create-movie-theater/create-movie-theater.component';
+import { EditActorComponent } from './actors/edit-actor/edit-actor.component';
+import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
+import { EditMovieTheaterComponent } from './movie-theaters/edit-movie-theater/edit-movie-theater.component';
+import { EditMovieComponent } from './movies/edit-movie/edit-movie.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +40,18 @@ import { CreateMovieTheaterComponent } from './movie-theaters/create-movie-theat
     CreateMovieComponent,
     IndexMovieTheatherComponent,
     CreateMovieTheaterComponent,
+    EditActorComponent,
+    EditGenreComponent,
+    EditActorComponent,
+    EditMovieTheaterComponent,
+    EditMovieComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
