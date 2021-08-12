@@ -20,10 +20,11 @@ export class InputImgComponent implements OnInit {
 
   change(event: any) {
     if (event.target.files.length > 0) {
-      const file: File = event.target.value[0];
+      const file: File = event.target.files[0] || event.dataTransfer.files[0];
       toBase64(file).then((value: any) => (this.imageBase64 = value));
       this.onImageSelected.emit(file);
-      // this.urlCurrentImage = null;
+      //this.urlCurrentImage = null;
+      console.log(event.target.value);
     }
   }
 }
