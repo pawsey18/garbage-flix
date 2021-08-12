@@ -9,4 +9,13 @@
     accept="image/png, image/jpeg"
     (change)="change($event)"
   />
+
+  <div>
+    <div *ngIf="imageBase64">
+      <img [src]="imageBase64" />
+    </div>
+    <div *ngIf="urlCurrentImage">
+      <img [src]="urlCurrentImage" />
+    </div>
+  </div>
 </div>
